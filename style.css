@@ -5,12 +5,14 @@
   /* padding and border of an element are included inside the width and height */
   box-sizing: border-box;
 }
+
 .navbar {
   height: 60px;
   background-color: #0f1111;
   color: white;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 .nav-logo {
   height: 57px;
@@ -49,19 +51,215 @@
 /* box3*/
 .nav-search {
   display: flex;
+
+  /*for spreding serach box evenly*/
+  justify-content: space-evenly;
   background-color: pink;
   width: 620px;
   height: 40px;
-  border-radius: 3px;
+  border-radius: 4px;
+}
+.nav-search:hover {
+  border: 2px solid orange;
 }
 .search-select {
-  background-color: #ffffff;
+  background-color: rgb(223, 222, 222);
   font: 14px;
   width: 50px;
   text-align: center;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: none;
+}
+.search-input {
+  /* for setting all the remaining area*/
+  width: 100%;
+  font-size: 1rem;
+  border: none;
 }
 .search-icon {
-  background-color: orange;
+  background-color: #febd68;
+  width: 45px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: black;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/*box 4*/
+span {
+  font-size: 0.7rem;
+}
+.nav-second {
+  font-size: 0.85rem;
+
+  /* make text darker*/
+  font-weight: 700;
+}
+
+/*box 6*/
+/* this syntax is used to add properties for all icon inside that class*/
+.nav-cart i {
+  font-size: 30px;
+}
+.nav-cart {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/*Panel*/
+.panel {
+  height: 40px;
+  background-color: #222f3d;
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.panel-option p {
+  display: inline; /* Make the panel-option a flexbox container */
+  gap: 20px; /* Add space between the options */
+  color: white; /* Set a visible color */
+  margin-left: 10px;
+  width: 70%;
+}
+.panel-deals {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: white;
+}
+.panel-all {
+  color: white;
+}
+
+/*hero section*/
+.hero-section {
+  background-image: url("heroimage.jpg");
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+/* .previous-icon {
+  margin-left: 10px;
+  color: white;
+} */
+.hero-msg {
+  background-color: #f5f6f6;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  width: 90%;
+  height: 40px;
+  background-size: 1rem;
+  margin-bottom: 300px;
+}
+.hero-msg a {
+  color: #007185;
+}
+/*shop section*/
+.shop-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #e2e7e6;
+  gap: 20px;
+}
+.box {
+  height: 400px;
+  border: 2px solid black;
+  width: 22%;
+  background-color: white;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+.box-img {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0px 15px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.box-content {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.box-content p {
+  color: #007185;
+}
+/*footer*/
+.foot-panel {
+  background-color: #37475a;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5rem;
+}
+footer {
+  margin-top: 15px;
+}
+.foot-panel2 {
+  background-color: #222f3d;
+  color: white;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+}
+ul {
+  margin-top: 20px;
+}
+ul a {
+  /* to placed the items vertically*/
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  color: #dddddd;
+  text-decoration: none;
+}
+.foot-panel3 {
+  background-color: #222f3d;
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.5px solid white;
+}
+.logo {
+  background-image: url("Amazon_logo.png");
+  height: 50px;
+  width: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.foot-panel4 {
+  background-color: #0f1111;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  font-size: 0.7rem;
+  text-align: center;
+  display: block;
+}
+.pages a {
+  padding: 10px;
+  margin-left: 0.5px;
+}
+.copyright {
+  padding: 5px;
 }
